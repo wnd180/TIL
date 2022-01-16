@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>타이틀을 다는 공간</title>
+  </head>
+  <body>
+    <h1>h1태그입니다.</h1>
+    <h2>h2태그입니다.</h2>
+    <h3>h3태그입니다.</h3>
+    <h4>h4태그입니다,</h4>
+    <h5>h5태그입니다.</h5>
+    <h6>h6태그입니다.</h6>
+
+    <h1 title="h1태그에 title달아주기">
+      title달은 h1태그(마우스 올렸을 때 툴팁)
+    </h1>
+    <p>p로 나타낸 단락1입니다. paragraph라는 뜻으로</p>
+    <p>
+      단락을 나눌 수 있으며, css로 단락 단위로 내어쓰기 및 들여쓰기가
+      가능해집니다.
+    </p>
+    <hr />
+    <p>
+      hr 태그를 이용해 구분선을 달 수 있습니다. <br />종료태그가 없습니다. 이
+      처럼 br태그를 이용해 줄바꿈도 가능합니다
+    </p>
+    <pre>
+      pre태그를 사용하면
+          사용자가 코딩한 그대로
+      출력이 됩니다.
+    </pre>
+    다양태그들<br />
+    <img src="특수기호.png" alt="다양한코드" width="600" />
+    <hr />
+    <h3>텍스트 꾸미기</h3>
+    <p>
+      <b>진하게b</b><br />
+      <strong>strong중요한</strong><br />
+      <em>em강조</em><br />
+      <i>i를 이용한 이탤릭 강조</i><br />
+      <b><i>bi이용해서 진하게 이탤릭 강조</i></b
+      ><br />
+      보통문자<small>small이용한 한단계 작은문자</small><br />
+      <del>del을 이용한 삭제</del><br />
+      <ins>ins를 이용한 추가</ins><br />
+      보통문자의 <sup>sup을 이용한 윗첨자</sup><br />
+      보통문자의 <sub>sub를 이용한 아랫첨자</sub><br />
+      <mark>mark를 이용한 하이라이팅</mark> <br />
+    </p>
+    <hr />
+    블록태그와 인라인태그. 블록태그엔 p, h1, div, ul 등 항상 새 라인에서
+    시작하여 출력 한라인 독점사용. div가 가장 많이사용된다. <br />
+    인라인태그 strong,a,img,span 등 블록속 삽입되어 블록의 일부로 출력됌. span이
+    가장 많이 사용된다.
+
+    <hr />
+    <div style="background-color: skyblue">
+      div블럭입니다.
+      <span style="color: red"
+        >span을 이용해서 인라인 블럭을 꾸며보겠습니다.</span
+      >
+    </div>
+    <br />
+    <hr />
+    <p>
+      이미지 삽입하기. &lt;img src = "이미지 파일의 url, 파일 경로는 상대경로를
+      이용해야함. ex) media/kitae.png" alt = "이미지가 손상 됬을때 출력할
+      문자열" 요 2개는 필수. width= "이미지폭" height = "이미지 높이"&gt;
+    </p>
+
+    <hr />
+    리스트 만들기. 3가지의 리스트가 있다. ol:순서리스트, ul:순서없는리스트,
+    dl:정의리스트 <br />
+    리스트 아이템은 li로 나타낸다. type에는 1 A a I i 가 있다.
+    <ol type="A">
+      <li>ol (ordered list)로 나타내기</li>
+      <li>li 1</li>
+      <li>li 2</li>
+    </ol>
+    <ul>
+      <li>ul (unordered list)로 나타내기</li>
+      <li>li 1</li>
+      <li>li 2</li>
+    </ul>
+    <br />
+    중첩 리스트로 나타내기
+    <ul>
+      <li>li 1</li>
+      <ul>
+        <li>li 1-1</li>
+        <li>li 1-2</li>
+      </ul>
+      <li>li 2</li>
+      <ul>
+        <li>li 2-1</li>
+        <li>li 2-2</li>
+      </ul>
+    </ul>
+    <dl>
+      <dt><strong>dt로 용어를 출력합니다.</strong></dt>
+      <dd>dd로 설명합니다.</dd>
+    </dl>
+    <hr />
+    표만들기 <br /><br />
+
+    <img src="표.png" alt="표 출력" width="600" />
+    <table border="1">
+      <caption>
+        1학기 성적
+      </caption>
+      <thead>
+        <tr>
+          <th>이름</th>
+          <th>HTML</th>
+          <th>CSS</th>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+          <th>합</th>
+          <th>225</th>
+          <th>230</th>
+        </tr>
+      </tfoot>
+      <tbody>
+        <tr>
+          <td>황기태</td>
+          <td>80</td>
+          <td>70</td>
+        </tr>
+        <tr>
+          <td>이재문</td>
+          <td>95</td>
+          <td>99</td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+    테이블에 이미지를 넣을 수도 있어요! <br />colspan을 이용해 열을 합칠 수도
+    있고 rowspan을 이용해 행을 합칠 수도 있습니다.
+    <hr />
+    a태그를 이용해 a 태그 속 href 속성에 하이퍼링크를 작성할 수 있습니다. a 태그
+    속에 <br />
+    <a href="hyperlinktest/test1.html"
+      >클릭하면 href로 연결해준 html파일이나 웹사이트로 이동합니다.</a
+    ><br />
+    <a href="naver.com">naver로 연결합니다.</a>
+  </body>
+</html>

@@ -5,43 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Foodwith 홈페이지</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .invite_class {
+        max-width: 100%;
+      }
+      .creator_class {
+        max-width: 100%;
+      }
+      .product_list {
+        max-width: 100%;
+        text-align: center;
+        font-size: 20px;
+      }
+      td span {
+        font-size: 28px;
+        font-weight: bold;
+      }
+    </style>
   </head>
   <body>
-    <header>
-      <img
-        src="image/section_invite.jpg"
-        alt="invite 섹션"
-        width="1500"
-        class="invite_class"
-      />
-    </header>
+    <img
+      src="image/section_invite.jpg"
+      alt="invite 섹션"
+      class="invite_class"
+    />
     <img
       src="image/section_creator.jpg"
       alt="크리에이터 섹션"
-      width="1500"
       class="creator_class"
     />
-    <h3>푸드위드 크리에이터</h3>
-    <p>
-      자신만의 특별한 푸드 콘텐츠를 만들어 공유하면 당신도 푸드위드 크리에이터가
-      될 수 있어요 <br />
-      지금 바로 푸드위드 크리에이터에 도전해보세요!
-    </p>
-    <p>
-      STEP 01 푸드위드에 신규 가입해주세요 <br />
-      STEP 02 로그인 후 Work 메뉴를 클릭해주세요 <br />
-      STEP 03 자신만의 푸드 콘텐츠를 올려주세요
-    </p>
-    <br />
-    <br />
-    <br />
+
     <h3>푸드위드 스토어</h3>
     <p>
       신선한 과일과 채소를 저렴한 가격으로 만날 수 있는 푸드위드 스토어! <br />
       이번주 타임 특가 할인율을 확인해주세요
     </p>
 
-    <table>
+    <table class="product_list">
       <tr height="230" weight="230">
         <td><img src="image/thumbnail_apple.jpg" width="230" /></td>
         <td><img src="image/thumbnail_onion.jpg" width="230" /></td>
@@ -51,19 +55,19 @@
       <tr height="140">
         <td>
           꿀사과 <br />
-          8,900원
+          <span>8,900</span>원
         </td>
         <td>
           친환경 양파 <br />
-          2,900원
+          <span>2,900</span>원
         </td>
         <td>
           재주 직송 유기농 바나나 <br />
-          33,900원
+          <span>33,900</span>원
         </td>
         <td>
           국내산 키위 <br />
-          16,900원
+          <span>16,900</span>원
         </td>
       </tr>
       <tr height="230" weight="230">
@@ -75,19 +79,19 @@
       <tr height="140">
         <td>
           유기농 브로콜리 <br />
-          2,480원
+          <span>2,480</span>원
         </td>
         <td>
           본사 직영 레몬 <br />
-          14,900원
+          <span>14,900</span>원
         </td>
         <td>
           국내산 마늘 <br />
-          10,900원
+          <span>10,900</span>원
         </td>
         <td>
           정품 완숙 토마토 <br />
-          19,900원
+          <span>19,900</span>원
         </td>
       </tr>
     </table>

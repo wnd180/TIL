@@ -20,6 +20,13 @@
     <!-- <link rel="stylesheet" href="css/styles.css" /> -->
     <!-- <link rel="icon" href="favicon.png" /> -->
     <title>타이틀을 다는 공간</title>
+    <style>
+      table,
+      tr,
+      td {
+        border: solid;
+      }
+    </style>
   </head>
   <body>
     <!-- <script src="js/main.js"></script> script는 주로 헤드에 넣진 않음.-->
@@ -30,11 +37,12 @@
     <h4>h4태그입니다,</h4>
     <h5>h5태그입니다.</h5>
     <h6>h6태그입니다.</h6>
-
+    <!-- 현업에서는 호환성을 위해 태그에 표현서식이 들어 있는 경우엔 모두 삭제후 css style 별도 적용-->
     <h1 title="h1태그에 title달아주기">
       title달은 h1태그(마우스 올렸을 때 툴팁)
     </h1>
     <p>p로 나타낸 단락1입니다. paragraph라는 뜻으로</p>
+    <!-- p는 문단 -->
     <p>
       단락을 나눌 수 있으며, css로 단락 단위로 내어쓰기 및 들여쓰기가
       가능해집니다.
@@ -122,7 +130,7 @@
     </dl>
     <hr />
     표만들기 <br /><br />
-
+    <!-- alt를 통해 웹 접근성을 높여야 함. alt 이미지 대체 텍스트 -->
     <img src="표.png" alt="표 출력" width="600" />
     <table border="1">
       <caption>
@@ -161,9 +169,23 @@
     <hr />
     a태그를 이용해 a 태그 속 href 속성에 하이퍼링크를 작성할 수 있습니다. a 태그
     속에 <br />
+    <!-- a 링크 href랑 같이 쓰임. +) target ="_self" 현재 브라우저에 띄움. _blank 새로운 브라우저 탭에 띄움-->
     <a href="hyperlinktest/test1.html"
       >클릭하면 href로 연결해준 html파일이나 웹사이트로 이동합니다.</a
     ><br />
     <a href="http://www.naver.com/">naver로 연결합니다.</a>
+    <!-- <div> division의 약자로 html 문서의 특정부분 지정하는데 사용 div부분에 따로 디자인 적용 가능-->
+    <form action="login.html" method="post">
+      ID: <input type="text" name="id" autocomplete="on" autofocus />
+      <!-- name에 있는 값을 통해 변수로 이동-->
+      PW: <input type="text" name="pw" /> test
+      <input type="button" value="기본 작성 값" name="test" />
+    </form>
+    <!-- action, method(http method) : post or get,  target 속성 부여.-->
+    <!-- type(button,checkbox,color,email,radio,text 등), maxlength(입력문자열 최대길이), minlength, autofocus, autocomplete 속성-->
+    <h3>sementic web</h3>
+    <br />
+    header nav(메뉴) aside section article footer 대충 구조잡고 의미 주는
+    정도<br />
   </body>
 </html>

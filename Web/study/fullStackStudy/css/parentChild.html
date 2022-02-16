@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    div span {
+      color: royalblue;
+    }
+    div > p {
+      color: red;
+    }
+    h1 + h2 {
+      color: yellow;
+    }
+    h1 ~ h3 {
+      color: green;
+    }
+    a:link {
+      color: red;
+    }
+    a:visited {
+      color: blue;
+    }
+    a:active {
+      color: green;
+    }
+    a:hover {
+      color: gray;
+    }
+    input:focus {
+      color: brown;
+    }
+    input[type="radio"]:indeterminate + span {
+      color: red;
+    }
+    input[type="radio"]:checked + span {
+      color: orange;
+    }
+    input[type="checkbox"]:enabled + span {
+      color: blue;
+    }
+    input[type="checkbox"]:disabled + span {
+      color: green;
+    }
+  </style>
+  <body>
+    <div>
+      <h1>그냥 test</h1>
+      <h2>test2</h2>
+      <p>안녕하세요 저는 <span>권성중</span> 입니다</p>
+      <h3>test3</h3>
+      <h1>권성중</h1>
+      <a href="https://www.fun-coding.org/">잔재미코딩 링크</a>
+      <form action="https://www.fun-coding.org/ffffff" method="get">
+        <input type="radio" name="item1" value="item" /> <span>item1</span
+        ><br />
+        <input type="radio" name="item2" value="item" /> <span>item2</span
+        ><br />
+        <input type="checkbox" name="check" value="check1" /><span>check1</span
+        ><br />
+        <input type="checkbox" name="check" value="check2" disabled /><span
+          >check2</span
+        ><br />
+        <input type="text" name="data" id="data" /><br />
+        <input type="submit" value="submit" />
+      </form>
+    </div>
+  </body>
+</html>

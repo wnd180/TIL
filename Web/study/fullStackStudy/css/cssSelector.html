@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <style>
+      .box1 {
+        background-color: blue;
+        width: 100vw;
+        height: 50vw;
+      }
+      .box2 {
+        background-color: red;
+        width: 100vw;
+        height: 50vw;
+      }
+      * {
+        color: red;
+      }
+      h1 {
+        color: blue;
+      }
+      #green {
+        color: green;
+      }
+      .yellow {
+        color: yellow;
+      }
+      [data-value] {
+        color: orange;
+      }
+      [data-value="david -~^"] {
+        color: purple;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- viewport는 웹 브라우저에서 웹페이지가 표시되는 영역-->
+    <!-- vw viewport 너비의 %-->
+    <!-- vh viewport 높이의 %-->
+    <!-- vmin viewport 너비or 높이 중 작은 쪽의 %-->
+    <!-- vmax viewport 너비or 높이 중 큰 쪽의 %-->
+
+    <!-- pixel % em rem이 있다.-->
+    <!-- em과 rem은 배수단위로 가진다 em은 중첩된 자식요소 사이즈에 영향을 주므로 
+    최상위 요소 사이즈를 기준으로 하는 rem을 주로 쓴다. -->
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+    <h1>안녕</h1>
+    <h2 id="green">안녕</h2>
+    <h3 class="yellow">안녕</h3>
+    <h4>안녕</h4>
+    <p data-value="dave">문단입니다</p>
+  </body>
+</html>

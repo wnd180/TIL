@@ -46,6 +46,20 @@
     input[type="checkbox"]:disabled + span {
       color: green;
     }
+    p:nth-child(2n-1) {
+      color: blue;
+    }
+    p:nth-last-child(2n-1) {
+      color: red;
+    }
+    /* 
+    p:first-of-type{
+      color:red;
+    }
+    p:nth-of-type{
+      color:red;
+    }
+    */
   </style>
   <body>
     <div>
@@ -67,6 +81,12 @@
         ><br />
         <input type="text" name="data" id="data" /><br />
         <input type="submit" value="submit" />
+        <div>
+          <p>안</p>
+          <p>녕</p>
+          <p>히</p>
+          <p>계</p>
+        </div>
       </form>
     </div>
   </body>
